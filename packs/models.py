@@ -71,12 +71,6 @@ class Pack(models.Model):
         self.save()
         os_user.remove_user(self.linux_username)
 
-    def kill_ssh_service(self):
-        lines = subprocess.check_output(['ps aux', '|', 'grep', '"' + self.get_ssh_command() + '"'])
-        for line in lines:
-            pid = line.split(' ')[0]
-            os.system('kill -9 ' + pid)
-
     def get_ssh_command(self):
         related_ssh_config_file = self.get_ssh_config_path()
         return '/usr/sbin/sshd -f ' + os.path.abspath(related_ssh_config_file)
