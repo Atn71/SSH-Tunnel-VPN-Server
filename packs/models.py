@@ -3,7 +3,6 @@ import os
 import random
 import shutil
 import string
-import subprocess
 import time
 
 from django.contrib.auth.models import User
