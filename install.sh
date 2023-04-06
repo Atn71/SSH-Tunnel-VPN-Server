@@ -37,7 +37,7 @@ python manage.py createsuperuser
 echo "############# You can create another admin user by executing ./adduser.sh #############"
 
 systemctl daemon-reload
-systemctl eable --now mmdvpn
+systemctl enable --now mmdvpn
 
 echo "<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>"
 echo "<<<<<<<<<<<<<<<    >>>>>>>>>>>>>>>>"
