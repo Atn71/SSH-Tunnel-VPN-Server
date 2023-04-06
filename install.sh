@@ -29,6 +29,7 @@ python manage.py runserver 0.0.0.0:80
 
 chmod +x runserver.sh
 chmod +x adduser.sh
+chmod +x uninstall.sh
 
 echo "#############################################"
 echo "############# Create Admin User #############"
