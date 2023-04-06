@@ -1,3 +1,5 @@
+apt install python3.8-venv
+
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -19,3 +21,4 @@ WantedBy=multi-user.target" >mmdvpn.service
 mv mmdvpn.service /lib/systemd/system/mmdvpn.service
 
 chmod +x runserver.sh
+chmod +x adduser.sh

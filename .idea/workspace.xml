@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afa4d415-a36c-4f96-b10e-db9d25b867cb" name="Changes" comment="add service to init.sh">
+    <list default="true" id="afa4d415-a36c-4f96-b10e-db9d25b867cb" name="Changes" comment="chmod +x runserver.sh">
+      <change afterPath="$PROJECT_DIR$/adduser.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -82,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680778219936</updated>
       <workItem from="1680778221081" duration="385000" />
-      <workItem from="1680778608417" duration="5874000" />
+      <workItem from="1680778608417" duration="7205000" />
     </task>
     <task id="LOCAL-00001" summary="add lower">
       <created>1680781480257</created>
@@ -119,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680785111452</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="chmod +x runserver.sh">
+      <created>1680785593145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680785593145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,7 +138,8 @@
     <MESSAGE value="add reboot period" />
     <MESSAGE value="delete kill ssh" />
     <MESSAGE value="add service to init.sh" />
-    <option name="LAST_COMMIT_MESSAGE" value="add service to init.sh" />
+    <MESSAGE value="chmod +x runserver.sh" />
+    <option name="LAST_COMMIT_MESSAGE" value="chmod +x runserver.sh" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
