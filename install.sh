@@ -9,22 +9,22 @@ python manage.py migrate
 
 python_file=$(readlink -f venv/bin/python)
 manage_file=$(readlink -f manage.py)
-source_venv=$(readlink -f venv/bin/activate)
 running_file=$(readlink -f runserver.sh)
 project_root=$(pwd)
 
 echo "[Unit]
 Description=MMD VPN Startup Script
 [Service]
-ExecStart=$running_file
+Restart=on-failure
+WorkingDirectory=$project_root
+ExecStart=$python_file $manage_file runserver 0.0.0.0:80
 [Install]
 WantedBy=multi-user.target" >mmdvpn.service
 mv mmdvpn.service /lib/systemd/system/mmdvpn.service
 
 echo "
-cd $project_root
-source $source_venv
-python $manage_file runserver 0.0.0.0:80
+source ./venv/bin/activate
+python manage.py runserver 0.0.0.0:80
 " >"$running_file"
 
 chmod +x runserver.sh
