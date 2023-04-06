@@ -7,7 +7,7 @@ rm db.sqlite3
 python manage.py makemigrations
 python manage.py migrate
 
-python_file=$(readlink -f venv/bin/python)
+python_file=$(pwd)/venv/bin/python
 manage_file=$(readlink -f manage.py)
 running_file=$(readlink -f runserver.sh)
 project_root=$(pwd)
