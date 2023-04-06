@@ -1,2 +1,2 @@
-# SSH-Tunnel---VPN-Server
+# SSH-Tunnel-VPN-Server
 full automated vpn  server
