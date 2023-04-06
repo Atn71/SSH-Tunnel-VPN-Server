@@ -20,6 +20,7 @@ def webhook(request):
         payer = data['payer']
         name = payer['name']
         mail = payer['mail']
+        mail = mail.strip().loawecase()
         desc = payer['desc']
         phone = payer['phone']
         timestamp = data['payment']['date']

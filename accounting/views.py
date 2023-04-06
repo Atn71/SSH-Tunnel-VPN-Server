@@ -11,6 +11,7 @@ def login_view(request):
         return redirect('user-home')
     if request.POST:
         username = request.POST['email']
+        username = username.strip().loawecase()
         password = request.POST['password']
         user = authenticate(username=username, password=password)
         if user is not None:
@@ -39,6 +40,7 @@ def signup_view(request):
     if request.POST:
 
         email = request.POST['email']
+        email = email.strip().loawecase()
         if User.objects.filter(email=email).exists():
             errors = 'This email has already been registered!'
         else:
