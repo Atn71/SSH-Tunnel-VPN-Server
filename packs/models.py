@@ -34,7 +34,7 @@ class Pack(models.Model):
             if uses.__contains__(pack.port):
                 uses[pack.port] += 1
 
-        best_port = PORTS[-1]
+        best_port = PORTS[0]
         for port in PORTS:
             if uses[port] < uses[best_port]:
                 best_port = port
@@ -45,9 +45,9 @@ class Pack(models.Model):
             self.start_time = datetime.datetime.now()
         self.started = True
         self.finished = False
-        if self.linux_username == '':
+        if self.linux_username == '' or self.linux_username is None:
             self.linux_username = 'vpn' + str(self.id)
-        if self.linux_password == '':
+        if self.linux_password == '' or self.linux_password is None:
             letters = string.ascii_lowercase + string.digits
             self.linux_password = ''.join(random.choice(letters) for _ in range(8))
             self.port = self.get_most_free_port()
