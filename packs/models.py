@@ -49,6 +49,7 @@ class Pack(models.Model):
         if self.linux_password == '' or self.linux_password is None:
             letters = string.ascii_lowercase + string.digits
             self.linux_password = ''.join(random.choice(letters) for _ in range(8))
+        if self.port is None or self.port == 0:
             self.port = self.get_most_free_port()
         self.save()
         os_user.add_user(self.linux_username, self.linux_password)
