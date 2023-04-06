@@ -19,8 +19,7 @@ full automated vpn server
         for server ui: <code>sudo ufw allow 80</code> 
 </li>
 <li>Enable ufw by <code>sudo ufw enable</code></li>
-<li>Install git by <code>sudo apt install git</code></li>
-<li>Clone code by <code>git clone https://github.com/MMDBadCoder/SSH-Tunnel-VPN-Server.git</code></li>
+<li>Clone code by <code>sudo apt install git ; git clone https://github.com/MMDBadCoder/SSH-Tunnel-VPN-Server.git</code></li>
 <li>Go to project's Directory by <code>cd SSH-Tunnel-VPN-Server/</code></li>
 <li>Tune your customized settings in VpnServer/settings by <code>vim VpnServer/settings.py</code></li>
 <li>Install MMD-VPV by <code>chmod +x install.sh ; ./init.sh</code></li>
