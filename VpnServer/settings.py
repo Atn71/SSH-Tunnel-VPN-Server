@@ -126,6 +126,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 LOGIN_URL = '/account/login/'
 
+############ IMPORTANT SETTINGS:
+
 EACH_WEEK_PRICE = 10_000  # toman
 
 PORTS = list(range(2200, 2230))
@@ -133,3 +135,5 @@ PORTS = list(range(2200, 2230))
 IDPAY_PAYMENT_PAGE_URL = 'https://idpay.ir/mmd10/shop/604235'
 
 HOSTNAME = 'hajmmd.ir'
+
+REBOOT_PERIOD_SECONDS = 6 * 60 * 60
