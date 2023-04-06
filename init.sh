@@ -17,3 +17,5 @@ ExecStart=$running_file
 WantedBy=multi-user.target" >mmdvpn.service
 
 mv mmdvpn.service /lib/systemd/system/mmdvpn.service
+
+chmod +x runserver.sh
