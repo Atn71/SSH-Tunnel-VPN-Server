@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    {% include 'common-head.html' %}
+</head>
+<body>
+
+<div class="ui segment" style="margin: 10px">
+
+    {% if errors %}
+        <div class="ui big message red">
+            {{ errors }}
+        </div>
+    {% endif %}
+
+    <form class="ui form" method="post" action="{% url 'user-login' %}">
+
+        {% csrf_token %}
+
+        <div class="field">
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Email">
+        </div>
+        <div class="field">
+            <label>Password</label>
+            <input type="password" name="password" placeholder="Password">
+        </div>
+        <button class="ui button" type="submit">Login</button>
+    </form>
+    <div class="ui horizontal divider">
+        Or
+    </div>
+    <a href="{% url 'user-sign-up' %}">
+        <div class="ui teal labeled icon button">
+            Sign up
+            <i class="add icon"></i>
+        </div>
+    </a>
+</div>
+
+</body>
+</html>
