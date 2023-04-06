@@ -7,7 +7,12 @@ rm db.sqlite3
 python manage.py makemigrations
 python manage.py migrate
 
+python_file=$(readlink -f venv/bin/python)
+manage_file=$(readlink -f manage.py)
+source_venv=$(readlink -f venv/bin/activate)
 running_file=$(readlink -f runserver.sh)
+project_root=$(pwd)
+
 echo "[Unit]
 Description=MMD VPN Startup Script
 [Service]
@@ -16,9 +21,8 @@ ExecStart=$running_file
 WantedBy=multi-user.target" >mmdvpn.service
 mv mmdvpn.service /lib/systemd/system/mmdvpn.service
 
-manage_file=$(readlink -f manage.py)
-source_venv=$(readlink -f venv/bin/activate)
 echo "
+cd $project_root
 source $source_venv
 python $manage_file runserver 0.0.0.0:80
 " >"$running_file"
@@ -46,4 +50,3 @@ echo "<<<<<<<<<                >>>>>>>>>>"
 echo "<<<<<<<<<<<<          >>>>>>>>>>>>>"
 echo "<<<<<<<<<<<<<<<    >>>>>>>>>>>>>>>>"
 echo "<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>"
-
