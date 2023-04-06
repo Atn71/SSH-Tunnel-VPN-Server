@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afa4d415-a36c-4f96-b10e-db9d25b867cb" name="Changes" comment="chmod +x runserver.sh">
-      <change afterPath="$PROJECT_DIR$/adduser.sh" afterDir="false" />
+    <list default="true" id="afa4d415-a36c-4f96-b10e-db9d25b867cb" name="Changes" comment="adduser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/init.sh" beforeDir="false" afterPath="$PROJECT_DIR$/init.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1680778219936</updated>
       <workItem from="1680778221081" duration="385000" />
-      <workItem from="1680778608417" duration="7205000" />
+      <workItem from="1680778608417" duration="8879000" />
     </task>
     <task id="LOCAL-00001" summary="add lower">
       <created>1680781480257</created>
@@ -127,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1680785593145</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add README.md">
+      <created>1680786959069</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1680786959069</updated>
+    </task>
+    <task id="LOCAL-00008" summary="adduser">
+      <created>1680787160362</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1680787160362</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +150,9 @@
     <MESSAGE value="delete kill ssh" />
     <MESSAGE value="add service to init.sh" />
     <MESSAGE value="chmod +x runserver.sh" />
-    <option name="LAST_COMMIT_MESSAGE" value="chmod +x runserver.sh" />
+    <MESSAGE value="add README.md" />
+    <MESSAGE value="adduser" />
+    <option name="LAST_COMMIT_MESSAGE" value="adduser" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

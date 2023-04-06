@@ -22,4 +22,4 @@ def reboot_os():
     os.system('reboot')
 
 
-threading.Thread(target=reboot_os(), daemon=True).start()
+threading.Thread(target=reboot_os, daemon=True).start()
